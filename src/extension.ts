@@ -30,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
 			}
 		}()
 	);*/
-	commandOutput = vscode.window.createOutputChannel('Shell');
+	commandOutput = vscode.window.createOutputChannel('SuraFlow');
 	context.subscriptions.push(commandOutput);
 	  
 	// The command has been defined in the package.json file
