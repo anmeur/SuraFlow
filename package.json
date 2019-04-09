@@ -62,5 +62,9 @@
 		"@types/node": "^10.12.21",
 		"@types/mocha": "^2.2.42"
 	},
-	"license": "SEE LICENSE IN LICENSE.txt"
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/anmeur/SuraFlow.git"
+	}
 }

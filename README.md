@@ -12,12 +12,12 @@ En este flujo existen 3 momentos:
 
 ## Manual de Uso
 ### Iniciar el Feature Branch
-Presionar `Ctrl + Shift + P` y seleccionar el comando: `SuraFlow: Feature Start`.
+Presionar `Ctrl+Shift+P` y seleccionar el comando: `SuraFlow: Feature Start`.
 
 Se abre un campo de text para ingresar el nombre del feature branch, cuando lo digite presione `Enter`.
 
 ### Realizar Commit 
-Presionar `Ctrl + Shift + P` y seleccionar el comando: `SuraFlow: Feature Commit`.
+Presionar `Ctrl+Shift+P` y seleccionar el comando: `SuraFlow: Feature Commit`.
 
 Se abre un campo de text para ingresar el mensaje para el commit, cuando lo digite presione `Enter`.
 
@@ -25,7 +25,7 @@ Se abre un campo de text para ingresar el mensaje para el commit, cuando lo digi
 > Tan frecuentemente como se pueda, pero al menos una vez al día.  De esta manera se asegura que los cambios estén constantemente protegidos en el servidor remoto de GIT.
 
 ### Finalizar el Feature Branch
-Presionar `Ctrl + Shift + P` y seleccionar el comando: `SuraFlow: Feature Finish`.
+Presionar `Ctrl+Shift+P` y seleccionar el comando: `SuraFlow: Feature Finish`.
 
 Se abre un campo de text para ingresar el mensaje para el commit final del feature branch, cuando lo digite presione `Enter`.
 

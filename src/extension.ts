@@ -78,22 +78,14 @@ export function activate(context: vscode.ExtensionContext) {
 		const message = 'Feature Branch Finish';
 		// Display a message box to the user
 		let commandLine = 'git sfdx featureFinish ';
-		const value = vscode.window.showInputBox({ prompt: 'Nombre del Feature Branch' })
+		const value = vscode.window.showInputBox({ prompt: 'Mensaje del Commit' })
 		.then(value => {
 			if (value !== null && value !== undefined && value.trim().length > 0) {
-				commandLine = commandLine + `${value} `;
-				const msjCommit = vscode.window.showInputBox({ prompt: 'Mensaje del commit' })
-				.then(msjCommit => {
-					if (msjCommit !== null && msjCommit !== undefined && msjCommit.trim().length > 0) {
-						commandLine = commandLine + `"${msjCommit}"`;
-						console.log('commandLine: ' + commandLine);
-						exec(commandLine, { cwd: workspaceRoot });
-					}else {
-						vscode.window.showErrorMessage("ERROR: No ingreso el mensaje del commit");
-					}
-				});
+				commandLine = commandLine + `"${value}"`;
+				console.log('commandLine: ' + commandLine);
+				exec(commandLine, { cwd: workspaceRoot });
 			}else {
-                vscode.window.showErrorMessage("ERROR: No ingreso el nombre del branch");
+                vscode.window.showErrorMessage("ERROR: No ingreso el mensaje del commit");
             }
 		});
 		vscode.window.showInformationMessage(message);
